@@ -19,13 +19,15 @@ Scope:
 - All charging stations across US except Puerto Rico and Alaska
   
 Procedure:
+
 Data Engineering 
 - Extract excel files from sources: https://afdc.energy.gov/vehicle-registration?year=2016 and https://afdc.energy.gov/stations/states)
 - Transform data by dropping unwanted columns, updating data types, tranposing columns and creating unique state IDs for merging of data 
 - Load data by building entity relationship diagram from CSV files and importing CSV files into postgreSQL database
   
 Data Visualization
-Use Altair to create maps that will show the:
+
+Use Altair to create maps that will show the following:
 - EV charging stations across US and per state
 - EV charging stations speed per state (L2 and DC Fast charging stations)
 - EV charging station per state vs the # of EVs
