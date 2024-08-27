@@ -22,8 +22,14 @@ Procedure:
 
 Data Engineering 
 - Extract excel files from sources: https://afdc.energy.gov/vehicle-registration?year=2016 and https://afdc.energy.gov/stations/states)
-- Transform data by dropping unwanted columns, updating data types, tranposing columns and creating unique state IDs for merging of data 
-- Load data by building entity relationship diagram from CSV files and importing CSV files into postgreSQL database
+    * source file datasets: alt_fuel_stations (Aug 16 2024) (1).csv and EV_registration_2016_to_2022.csv
+    * Note: EV_registration_2016_to_2022.csv was compile from multiple files from the /afdc.energy.gov site as a single set of data for years 2016-2022 was needed. 
+- Transform data by dropping unwanted (where all cells are blank)columns, updating data types, inserting 0 values inplace of blank cell values, tranposing columns and creating unique state IDs for merging of data.
+    * dataframes created after transformation was completed : df_EV_Details and df_registration_data
+- Load data by building entity relationship diagram (using Quick db for table/relatinship creation) referancing schema_sql script and importing CSV files into postgreSQL database, for database & table creation and data loading.
+    * tables created : electric_stations, and registration_data and SQL created for schema_sql2 
+- Database was exported from PostGres into csv files to enable visulizations to referance db data.
+    * csv exported for database : df_long_data.xlsx and EV_Deatils.csv  
   
 Data Visualization
 
