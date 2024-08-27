@@ -28,9 +28,9 @@ Data Engineering
 Data Visualization
 
 Use Altair to create maps that will show the following:
-- EV charging stations across US and per state: chloropeth maps overlayed by scattered plot and bubble charts using Altair
+- EV charging stations across US and per state: chloropeth maps overlayed by scattered plot and bubble charts
 - EV charging stations speed per state (L2 and DC Fast charging stations):
-- EV charging station per state vs the # of EVs:
+- EV charging station per state & the # of EVs: created the line charts. The nature of the chart allows users to explore specific details about each state and how its EV market has evolved year by year. Visualize the trend of electric vehicle (EV) registrations & # of Stations built across different U.S. states over the years 2016 to 2022
 
 
 
