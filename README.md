@@ -16,7 +16,7 @@ Key Tasks and Goals:
 - Correlate EV registration vs charger availability  
 
 Scope:
-- All charging stations across US except Puerto Rico and Alaska
+- 2016 to 2022
   
 Procedure:
 
@@ -28,9 +28,9 @@ Data Engineering
 Data Visualization
 
 Use Altair to create maps that will show the following:
-- EV charging stations across US and per state
-- EV charging stations speed per state (L2 and DC Fast charging stations)
-- EV charging station per state vs the # of EVs
+- EV charging stations across US and per state: chloropeth maps overlayed by scattered plot and bubble charts using Altair
+- EV charging stations speed per state (L2 and DC Fast charging stations):
+- EV charging station per state vs the # of EVs:
 
 
 
