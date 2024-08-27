@@ -3,7 +3,7 @@ Project Title: Accessibility of EV chargers across the US for ease of travel
 
 Group Members:
 - David Kim 
-- V Iosif 
+- Iosif Vardoev
 - RoseMary Rios  
 - Jean Vicencio 
 
