@@ -35,10 +35,9 @@ We simplified the database structure by using only two tables related to each da
 
 EV Charging Stations Details:
 The EV charging stations data provided comprehensive details for all EV charging station locations across the US. While the dataset contained many elements, we primarily focused on the infrastructure details relevant to electric vehicles. The data allowed us to showcase the distribution of charging stations across different states and regions, their associated charging speeds (medium and fast charge), and how the growth in station availability aligned with EV registrations from 2016 to 2022.
-
 Registration Data Details (EV Vehicle Registration Count per US State, 2016–2022):
 The registration data was complete, with no gaps in registration counts, and included data for all US states and territories.
-** See Table desciption below. 
+** Table Details shown below 
 
 DATA VISUALIZATION
 
@@ -54,53 +53,53 @@ Major automakers are offering a diverse range of EVs, ensuring everyone can find
 Charging speeds are faster than ever, with medium and high-speed options that allow drivers to recharge quickly and continue their journey.
 3. As EV sales climb, charging station openings are increasing in parallel, ensuring that drivers have plenty of options wherever they are.
 --------
-Table Descriptions:
+Table Details:
 1.	electric_stations (Stores details of EV charging stations)
-Column Name	Data Type	Description
-fuel_type_code	varchar	Type of fuel available at the station (e.g., Electric, Hybrid)
-state_id	int	Foreign key linking to the state in the registration data
-station_name	varchar	Name of the charging station
-street_address	varchar	Address of the station
-intersection_directions	varchar	Directions or intersection details near the station
-city	varchar	City where the station is located
-state	varchar	State where the station is located
-zip	varchar	ZIP code of the station's location
-station_phone	varchar	Phone number of the charging station
-status_code	varchar	Operational status of the station
-groups_with_access_code	varchar	Groups or users allowed to access the station
-cards_accepted	varchar	Payment cards accepted at the station
-ev_level1_evse_num	decimal	Speed Level 1 charger 
-ev_level2_evse_num	decimal	Speed Level 2 charger 
-ev_dc_fast_num	decimal	Speed Level Number of DC Fast charger
-ev_network	varchar	EV charging network provider (e.g., ChargePoint, Tesla)
-geocode_status	varchar	Status of the geocode verification for the station location
-latitude	decimal	Latitude of the station location
-longitude	decimal	Longitude of the station location
-date_last_confirmed	date	Date when the station's details were last confirmed
-id	int	Unique ID for the station (Primary Key)
-updated_at	timestamp	Timestamp of the last update to the station data
-owner_type_code	varchar	Type of ownership (e.g., Public, Private)
-open_date	date	Date when the station opened
-country	varchar	Country where the station is located
-access_code	varchar	Code that governs the station's access (e.g., Public, Private)
-federal_agency_code	varchar	Code for any federal agency associated with the station
-facility_type	varchar	Type of facility (e.g., Workplace, Retail)
-maximum_vehicle_class	varchar	Maximum vehicle class allowed at the station
-ev_workplace_charging	boolean	Indicator if the station offers workplace charging
+Column Name
+fuel_type_code
+state_id
+station_name
+street_address
+intersection_directions
+city
+state
+zip
+station_phone
+status_code
+groups_with_access_code
+cards_accepted
+ev_level1_evse_num
+ev_level2_evse_num
+ev_dc_fast_num
+ev_network
+geocode_status
+latitude
+longitude
+date_last_confirmed
+id
+updated_at
+owner_type_code
+open_date
+country
+access_code
+federal_agency_code
+facility_type
+maximum_vehicle_class
+ev_workplace_charging
 2.	registration data (Stores EV registration data per state)
-Column Name	Data Type	Description
-state	varchar	Name of the state
-yr_2016	int	EV registrations in 2016
-yr_2017	int	EV registrations in 2017
-yr_2018	int	EV registrations in 2018
-yr_2019	int	EV registrations in 2019
-yr_2020	int	EV registrations in 2020
-yr_2021	int	EV registrations in 2021
-yr_2022	int	EV registrations in 2022
-state_id	int	Unique ID for the state (Primary Key, referenced by electric_stations)
+Column Name	Description
+state	Name of the state
+yr_2016	EV registrations in 2016
+yr_2017	EV registrations in 2017
+yr_2018	EV registrations in 2018
+yr_2019	EV registrations in 2019
+yr_2020	EV registrations in 2020
+yr_2021	EV registrations in 2021
+yr_2022	EV registrations in 2022
+state_id	Unique ID for the state (Primary Key, referenced by electric_stations)
 Relationship:
 •	The "state_id" column in the "electric_stations" table is a foreign key that references the "state_id" column in the "registration_data" table, creating a link between EV charging stations and vehicle registration data by state.
-This structure allowed us to combine data from the two tables, enabling analyses such as comparing EV registration growth with the expansion of EV charging infrastructure across different states.
+
 
 -------
 Ethical Data Practices
