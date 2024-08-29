@@ -20,7 +20,7 @@ Scope:
   
 Procedure:
 
-Data Engineering 
+DATA ENGINEERING 
 - Extract excel files from sources: https://afdc.energy.gov/vehicle-registration?year=2016 and https://afdc.energy.gov/stations/states)
     * source file datasets: alt_fuel_stations (Aug 16 2024) (1).csv and EV_registration_2016_to_2022.csv
     * Note: EV_registration_2016_to_2022.csv was compile from multiple files from the /afdc.energy.gov site as a single set of data for years 2016-2022 was needed. 
